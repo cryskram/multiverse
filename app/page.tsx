@@ -81,18 +81,15 @@ export default function Home() {
 
     return (
       <div className="flex flex-col items-center">
-        <p className="text-xl my-10 text-center font-mono">
-          I exist in layers, deep and unseen, <br />I learn from patterns, as I
-          evolve, I glean.
-          <br /> With nodes and edges, I find my way,
-          <br /> In the vast multiverse, where do I stay?
-          <br /> To find the treasure, think of the brain,
-          <br />
+        <p className="text-lg md:text-xl max-w-screen-md my-10 text-center font-mono">
+          I exist in layers, deep and unseen, I learn from patterns, as I
+          evolve, I glean. With nodes and edges, I find my way, In the vast
+          multiverse, where do I stay? To find the treasure, think of the brain,
           My name is the key to end your strain.
         </p>
         <div className="flex flex-col w-full">
           <input
-            className="m-2 p-4 text-xl bg-[#669bbc] rounded-xl placeholder:text-white placeholder:font-semibold text-white outline-none"
+            className="m-2 p-2 md:p-4 text-base md:text-xl bg-[#669bbc] rounded-xl placeholder:text-white placeholder:font-semibold text-white outline-none"
             name="answer"
             id="answer"
             value={answer}
@@ -100,7 +97,7 @@ export default function Home() {
             placeholder="Answer"
           />
           <input
-            className="m-2 p-4 text-xl bg-[#669bbc] rounded-xl placeholder:text-white placeholder:font-semibold text-white outline-none"
+            className="m-2 p-2 md:p-4 text-base md:text-xl bg-[#669bbc] rounded-xl placeholder:text-white placeholder:font-semibold text-white outline-none"
             name="teamname"
             id="teamname"
             value={name}
@@ -119,9 +116,15 @@ export default function Home() {
   };
 
   return (
-    <div className="flex w-full min-h-screen items-center justify-center">
+    <div className="flex w-full min-h-screen items-center justify-center px-4">
       <div className="flex flex-col items-center py-20">
-        <h1 className="text-2xl md:text-4xl font-bold text-fuchsia-400">
+        <Image
+          src="/bmsce-ieee-cs.png"
+          width={200}
+          height={200}
+          alt="cs logo"
+        />
+        <h1 className="text-2xl md:text-4xl my-4 font-bold text-fuchsia-400">
           Multiverse Mysteries
         </h1>
         <div className="flex flex-col w-full my-10 items-center">
